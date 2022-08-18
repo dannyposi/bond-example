@@ -19,7 +19,7 @@ contract BondFlowResolver {
         }
     }
 
-    function resolveLiquidation(string assetType) returns(BondVerification) {
+    function resolveLiquidation(string assetType) returns(BondLiquidation) {
         switch(assetType) {
             case "TOKEN":
                 return tokenLiquidation;
